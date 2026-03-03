@@ -26,7 +26,7 @@ public class Main {
             aumento=sc.nextDouble();
             produto[i].aumento(aumento);
 
-            System.out.printf("%n%s, Você colocou o valor do seu produto de R$%.2f e existem %d no estoque.%n",produto[i].nome,produto[i].valor,produto[i].quantidade);
+            System.out.printf(" %n%s, Você colocou o valor do seu produto de R$%.2f e existem %d no estoque.%n",produto[i].nome,produto[i].valor,produto[i].quantidade);
 
         }
 
