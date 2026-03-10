@@ -24,7 +24,7 @@ public class BilheteUnico {
         saldo += valor;
     }
 
-    public void passarCatraca(){
+    public boolean passarCatraca(){
         double valor = tarifaBase;
         if (tipoTarifa.equalsIgnoreCase("estudante") ||
                 tipoTarifa.equalsIgnoreCase("professor")){
@@ -33,10 +33,11 @@ public class BilheteUnico {
 
         //verifica se tem saldo disponível
         if (saldo < valor){
-            return;
+            return false;
         }
 
         saldo = saldo - valor;
+        return true;
     }
 
 }
